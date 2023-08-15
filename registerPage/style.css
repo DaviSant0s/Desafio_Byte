@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.createAccount-container{
+    background-color: #EAF0F2;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.createAccount-content{
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: 1fr;
+    width: 50vw;
+    height: 60vh;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.238);
+    border-radius: 15px 15px 15px 15px;
+    
+}
+
+.welcomeBack-createAccount{
+    background-color: #13A49D;
+    border-radius: 15px 0px 0px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.welcomeBack-createAccount > span{
+    font-size: 2em;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+.welcomeBack-createAccount > button{
+    width: 9em;
+    height: 2.5em;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: 600;
+    color: white;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: transform 0.2s
+}
+
+.welcomeBack-createAccount > button:active{
+    transform: scale(0.99);
+}
+
+.welcomeBack-createAccount > button:hover{
+    background-color: #214c4a11;
+}
+
+.welcomeBack-createAccount > p{
+    color: white;
+    font-size: 0.8em;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
+
+.createAccount{
+    background-color: #FFFFFF;
+    border-radius: 0px 15px  15px 0px ;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.createAccount > span{
+    font-size: 2em;
+    font-weight: bolder;
+    color: #13A49D;
+}
+
+.createAccount > form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.createAccount > form > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+    background-color: #ECEFF2;
+    width: 100%;
+    height: 2.5em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 3px;
+}
+
+.createAccount > form > div > label{
+    margin-top: 6px;
+}
+
+.createAccount > form > div > label > span{
+    color: grey;
+    font-size: 19px;
+}
+
+.createAccount > form > div > input{
+    border: none;
+    width: 100%;
+    margin-left: 7px;
+    background-color: #ECEFF2;
+    outline: none;
+}
+
+.createAccount > form > button{
+    width: 9em;
+    height: 2.5em;
+    border: 1px solid #13A49D;
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #13A49D;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.createAccount > form > button:active{
+    transform: scale(0.99);
+}
+.createAccount > form > button:hover{
+    background-color: #b2e4e11c;
+}

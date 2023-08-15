@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <title>Login</title>
+</head>
+<body>
+
+    <div class="login-container">
+        <div class='login-content'>
+            <div class='login'>
+                <div class="title-login">
+                    <span>Fazer Login</span>
+                </div>
+
+                
+                <form class="form-login" action="#" method="post" autocomplete="on">
+                    <div class="inputs-login">
+                        <label for="iemail">
+                            <span class="material-symbols-outlined">Mail</span>
+                        </label>
+                        <input type="email" name="email" id="iemail" placeholder="Email" autocomplete="email" required>
+                    </div>
+                    <div class="inputs-login">
+                        <label for="ipassword">
+                            <span class="material-symbols-outlined">Lock</span>
+                        </label>
+                        <input type="password" name="password" id="ipassword" placeholder="Senha" autocomplete="new-password" required>
+                    </div>
+                    <div class="forgot-password"><a href="#">Esqueceu a senha?</a></div>
+                    <button onclick="goToPageLogged()" >Entrar</button>
+                </form>
+            </div>
+
+            <div class='welcomeBack-login'>
+                <span>Bem vindo!</span>
+                <p>Para se conectar conosco, faça um cadastro</p>
+                <p>com suas informações pessoais</p>
+                <button onclick="goToCreateAccountPage()">Cadastrar</button>
+            </div>
+        </div>  
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.login-container{
+    background-color: #EAF0F2;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-content{
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    grid-template-rows: 1fr;
+    width: 50vw;
+    height: 60vh;
+    background-color: transparent;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.238);
+    border-radius: 15px 15px 15px 15px;
+    
+}
+
+.login{
+    background-color: #FFFFFF;
+    border-radius: 15px 0px  0px 15px ;
+
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.login > .title-login > span{
+    font-size: 2em;
+    font-weight: bolder;
+    color: #13A49D;
+}
+
+.login > form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+}
+
+.login > form > .inputs-login{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+
+    background-color: #ECEFF2;
+    width: 100%;
+    height: 2.5em;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+
+    border-radius: 3px;
+}
+
+.login > form > .inputs-login > label{
+    margin-top: 6px;
+}
+
+.login > form > .inputs-login > label > span{
+    color: grey;
+    font-size: 19px;
+}
+
+.login > form > .inputs-login > input{
+    border: none;
+    width: 100%;
+    margin-left: 7px;
+    background-color: #ECEFF2;
+    outline: none;
+}
+
+.login > form > .forgot-password{
+    margin: 1em 0 0.5em 0;
+}
+
+.login > form > .forgot-password > a{
+    color: rgba(0, 0, 0, 0.636); 
+}
+
+.login > form > button{
+    width: 50%;
+    height: 2.5em;
+    border: 1px solid #13A49D;
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: 600;
+    color: #13A49D;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.login > form > button:active{
+    transform: scale(0.99);
+}
+.login > form > button:hover{
+    background-color: #b2e4e11c;
+}
+
+.welcomeBack-login{
+    background-color: #13A49D;
+    border-radius: 0px 15px 15px 0px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.welcomeBack-login > span{
+    font-size: 2em;
+    font-weight: bolder;
+    color: #FFFFFF;
+}
+
+.welcomeBack-login > button{
+    width: 9em;
+    height: 2.5em;
+    border: 1px solid white;
+    background-color: transparent;
+    border-radius: 15px;
+    font-weight: 600;
+    color: white;
+    margin-top: 1em;
+    cursor: pointer;
+    transition: transform 0.2s
+}
+
+.welcomeBack-login > button:active{
+    transform: scale(0.99);
+}
+
+.welcomeBack-login > button:hover{
+    background-color: #214c4a11;
+}
+
+.welcomeBack-login > p{
+    color: white;
+    font-size: 0.8em;
+    font-weight: 100;
+    margin-bottom: 5px;
+}
