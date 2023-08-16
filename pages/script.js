@@ -36,26 +36,32 @@ function verification(email, password){
     let email_test = false;
     let password_test = false;
 
-    for (let i = 0; i < registrationData.length; i++){
+    if (registrationData){
 
-        if (registrationData[i].email === email){
-            email_test = true;
+        for (let i = 0; i < registrationData.length; i++){
+
+            if (registrationData[i].email === email){
+                email_test = true;
+            }
+
+            if (registrationData[i].password === password){
+                password_test = true;
+            }
         }
 
-        if (registrationData[i].password === password){
-            password_test = true;
-        }
-    }
+        if (email_test === true){
 
-    if (email_test === true){
+            if (password_test === true){
+                return {error: false}
+            }else{
+                return {error: true, message: 'Senha inválida!'}
+            }
 
-        if (password_test === true){
-            return {error: false}
         }else{
-            return {error: true, message: 'Senha inválida!'}
+            return {error: true, message: 'Email inválido!'}
         }
 
-    }else{
+    } else{
         return {error: true, message: 'Email inválido!'}
     }
 
