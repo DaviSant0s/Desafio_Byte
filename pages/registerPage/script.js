@@ -107,5 +107,5 @@ function validation_cpf(cpf){
 }
 
 function goToLoginPage(){
-    window.location.href = '../loginPage/index.html'
+    window.location.href = '../index.html'
 }

@@ -1,7 +1,7 @@
 const form = document.querySelector('.form-login');
 
 function goToCreateAccountPage(){
-    window.location.href = '../registerPage/index.html';
+    window.location.href = 'registerPage/index.html';
 }
 
 function checkData(){
@@ -17,7 +17,7 @@ function checkData(){
         if (validation.error === true){
             alert(validation.message);
         } else{
-            window.location.href = '../pageLogged/index.html';
+            window.location.href = 'pageLogged/index.html';
         }
 
     })
