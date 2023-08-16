@@ -21,10 +21,10 @@ function checkData(){
         if (validation.error === true){
             alert(validation.message);
         } else{
-            goToPageLogged()
+            goToPageLogged();
         }
 
-    })
+    });
 }
 
 checkData();
