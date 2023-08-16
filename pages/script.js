@@ -4,6 +4,10 @@ function goToCreateAccountPage(){
     window.location.href = 'registerPage/index.html';
 }
 
+function goToPageLogged(){
+    window.location.href = 'pageLogged/index.html';
+}
+
 function checkData(){
 
     form.addEventListener('submit', (e) => {
@@ -17,7 +21,7 @@ function checkData(){
         if (validation.error === true){
             alert(validation.message);
         } else{
-            window.location.href = 'pageLogged/index.html';
+            goToPageLogged()
         }
 
     })
