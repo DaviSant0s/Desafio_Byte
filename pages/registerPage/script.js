@@ -1,4 +1,20 @@
 const form = document.querySelector('.form-createAccount');
+const name = form.querySelector('#iname');
+const cpf = form.querySelector('#icpf');
+const email = form.querySelector('#iemail');
+const password = form.querySelector('#ipassword');
+const confirmPassword = form.querySelector('#iconfirm-password');
+
+function limpaInput(){
+    name.value = '';
+    cpf.value = '';
+    email.value='';
+    password.value = '';
+    confirmPassword.value = '';
+
+    name.focus();
+}
+
 
 function saveData(){
 
@@ -6,13 +22,6 @@ function saveData(){
 
     form.addEventListener('submit', function(e){
         e.preventDefault();
-
-        const name = form.querySelector('#iname');
-        const cpf = form.querySelector('#icpf');
-        const email = form.querySelector('#iemail');
-        const password = form.querySelector('#ipassword');
-        const confirmPassword = form.querySelector('#iconfirm-password');
-
 
         const verification = validation(cpf.value, password.value, confirmPassword.value)
 
@@ -45,6 +54,7 @@ function saveData(){
 
             }
 
+            limpaInput()
             alert('Cadastro realizado com sucesso!');
 
         }
@@ -109,3 +119,5 @@ function validation_cpf(cpf){
 function goToLoginPage(){
     window.location.href = '../index.html'
 }
+
+
